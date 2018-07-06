@@ -1,0 +1,61 @@
+@import './icons';
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.dom-list {
+
+  li {
+    list-style-type: none;
+    margin-bottom: 15px;
+    transition: 1s;
+    cursor: pointer;
+
+    [class^=ico] {
+      margin-right: 10px;
+    }
+
+    &.open {
+      &>.ico-expand-black {
+        @extend %close-black;
+      }
+      &>.ico-expand-white {
+        @extend %close-white;
+      }
+      &>ul {
+        display: block;
+      }
+    }
+
+    .ico-expand-black {
+      @extend %open-black;
+    }
+
+    .ico-expand-white {
+      @extend %open-white;
+    }
+
+    .ico-folder-blue {
+      @extend %folder-blue;
+    }
+
+    .ico-folder-red {
+      @extend %folder-red;
+    }
+
+    .ico-file {
+      @extend %file;
+    }
+
+    ul {
+      display: none;
+      margin: 15px 0 0 30px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

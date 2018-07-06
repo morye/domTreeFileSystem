@@ -1,0 +1,50 @@
+$url-icon-sprite: '../imgs/icon-sprite.png';
+
+%folder-blue {
+  background: transparent url($url-icon-sprite) no-repeat 0 0;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+}
+
+%folder-red {
+  background: transparent url($url-icon-sprite) no-repeat -14px 0;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+}
+
+%file {
+  background: transparent url($url-icon-sprite) no-repeat -29px 0;
+  width: 12px;
+  height: 14px;
+  display: inline-block;
+}
+
+%open-black {
+  background: transparent url($url-icon-sprite) no-repeat -58px -2px;
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+}
+
+%close-black {
+  background: transparent url($url-icon-sprite) no-repeat -72px -2px;
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+}
+
+%open-white {
+  background: transparent url($url-icon-sprite) no-repeat -86px -2px;
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+}
+
+%close-white {
+  background: transparent url($url-icon-sprite) no-repeat -100px -2px;
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+}
